@@ -1,0 +1,4 @@
+¿Qué resultaria de las siguientes comparaciones? ¿Qué palabra va antes y cuál después?
+1) "Hola".compareTo("Adios") Nos da un resultado positivo pues la "H" va después de la "A" que es la diferencia entre los Unicode de las primeras letras de las dos cadenas, por lo que primero va la cadena "Adios" y después la cadena "Hola"
+2) "Hola".compareTo("hola") Aqui tenemos un resultado negativo ya que la "H" mayúscula y "h" míniscula tienen valores distintos en Unicode, por lo que la primer cadena es "Hola" y después es "h"
+3) "Hola".compareToIgnoreCase("hola") En este caso el resultado es cero porque compareToIgnoreCase nos dice que ignoremos si las letras son mayúsculas o minúsculas y en ese caso "H"="h" por lo que aqui no importa el orden
